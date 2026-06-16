@@ -37,7 +37,7 @@ li{
 nav a{
     color: white;
 }
-.logo{
+#content-logo{
     background-image: url(../IMG/icone_logo_studio.png);
     height: 60px;
     width: 60px;
@@ -45,7 +45,7 @@ nav a{
     background-size: contain;
     margin-top: 5px;
 }
-.nomelogo{
+#content-nome-logo{
     background-image: url(../IMG/nome_nav.png);
     height: 50px;
     width: 108px;
@@ -53,14 +53,14 @@ nav a{
     background-size: contain;
     margin-top: 5px;
 }
-.painav{
+.container-logos{
     display: flex;
     gap: 20px;
 }
 
 /*tudo acima e da header*/
 
-#s1{
+#section-1{
     background-color: rgba(11, 12, 13, 1);
     display: flex;
     justify-content: space-between;
@@ -68,14 +68,14 @@ nav a{
     height: 715px;
     padding: 0 0 0 5vw;
 }
-#h2ebuttons{
+.container-titulos-e-botoes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
     gap: 7pc;
 }
-#h2{
+.content-titulos{
     margin: 0 0 0 6vw;
     color: white;
     font-size: clamp(50px, 7vw, 95px);
@@ -86,11 +86,11 @@ nav a{
     font-style: italic;
 }
 #h2dourado{
-    color: rgba(243, 229, 28, 1);
+    color: rgb(145, 136, 19);
 }
 
 /*tudo acima e dos h2 da section 1*/
-#botoes{
+#botoes-section1{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -113,29 +113,29 @@ nav a{
     font-weight: 600;
     font-style: italic;
 }
-#btn1{
-    display: flex;
-    align-items: center;
-    gap: 27px;
-}
-#btn2{
-    display: flex;
-    align-items: center;
-    gap: 21px;
-}
 .button img{
     width: 40px;
     height: 40px;
 }
+#button1{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+#button2{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
 
 /*tudo acima sao os botoes do section 1*/
-.paimulheres{
+.container-imagem-section1{
     height: 100%;
     width: 750px;
     display: flex;
     align-items: end;
 }
-.mulheress1{
+#content-mulheres-section1{
     background-image: url(../IMG/mulheres_s1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,14 +148,14 @@ nav a{
 
 /*literal tudo, botoes, h2. sao da section 1*/
 
-#s2{
+#section-2{
     background-color: rgb(0, 0, 0);
     display: flex;
     width: 100%;
     height: 715px;
 
 }
-.imagemetexto{
+.container-imagem-e-texto-e-botao{
     width: 100vw;
     max-height: 715px;
     display: flex;
@@ -164,7 +164,7 @@ nav a{
     gap: 10vw;
     padding-bottom: 4%;
 }
-#dona{
+#content-imagem-section2{
     background-image: url(../IMG/dona.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,9 +172,11 @@ nav a{
     height: 550px;
     border: 1px solid white;
     border-radius: 10px;
-    
 }
-.texto1{
+
+/*Acima esta a imagem da section 2*/
+
+.container-titulos-e-paragrafos-section2{
     display: flex;
     flex-direction: column;
     padding-bottom: 7%;
@@ -183,31 +185,36 @@ nav a{
     height: 515px;
     
 }
-.s2h2{
+#content-titulos-section2{
     color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 25px;
-    font-family: "La Belle Aurore", cursive;
+    font-size: clamp(20px,7w,35px);
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-.s2h2 #profissionalismo{
-    font-size: 40px;
+#content-titulos-section2 #titulo-maior{
+    font-size: clamp(30px,7vw,40px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
+    color: rgb(145, 136, 19);
 }
-.pr{
+#content-paragrafos-section2{
     color: white;
     display: flex;
     flex-direction: column;
     gap: 25px;
     width: 700px;
-    font-size: 20px;
+    font-size: clamp(15px,7vw,20px);
     
 }
-.agende{
+
+/*Acima esta os paragrafos e titulos da section 2*/
+
+#content-botao-agende{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +222,7 @@ nav a{
     margin-top: 15%;
     
 }
-.agende button{
+#content-botao-agende button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,10 +234,12 @@ nav a{
     height: 50px;
     font-size: 25px;
 }
-.agende a{
+#content-botao-agende a{
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
+
+/*Acima esta o botao agende da section 2*/
