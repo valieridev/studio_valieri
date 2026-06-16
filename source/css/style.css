@@ -136,7 +136,7 @@ nav a{
     align-items: end;
 }
 #content-mulheres-section1{
-    background-image: url(../IMG/mulheres_s1.png);
+    background-image: url(..//img/mulheres_s1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
@@ -164,7 +164,7 @@ nav a{
     padding-bottom: 4%;
 }
 #content-imagem-section2{
-    background-image: url(../IMG/dona.png);
+    background-image: url(..//img/dona.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 300px;
