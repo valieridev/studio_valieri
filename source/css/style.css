@@ -152,8 +152,7 @@ nav a{
     background-color: rgb(0, 0, 0);
     display: flex;
     width: 100%;
-    height: 715px;
-
+    height: 100vh;
 }
 .container-imagem-e-texto-e-botao{
     width: 100vw;
@@ -168,8 +167,8 @@ nav a{
     background-image: url(../IMG/dona.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 550px;
+    min-width: 300px;
+    min-height: 550px;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -179,50 +178,36 @@ nav a{
 .container-titulos-e-paragrafos-section2{
     display: flex;
     flex-direction: column;
-    padding-bottom: 7%;
-    margin-top: 2%;
     gap: 20px;
-    height: 515px;
+    min-height: 515px;
     
 }
-#content-titulos-section2{
+.container-titulos-e-paragrafos-section2 h2{
     color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     font-size: clamp(20px,7w,35px);
     font-family: "Edu NSW ACT Cursive", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-#content-titulos-section2 #titulo-maior{
+.container-titulos-e-paragrafos-section2 #titulo-maior{
     font-size: clamp(30px,7vw,40px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
     color: rgb(145, 136, 19);
 }
-#content-paragrafos-section2{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    width: 700px;
+#section-2 p{
+    max-width: 40vw;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 25px;
     font-size: clamp(15px,7vw,20px);
-    
+    color: white;
 }
 
 /*Acima esta os paragrafos e titulos da section 2*/
 
-#content-botao-agende{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 50% 0 0;
-    margin-top: 15%;
-    
-}
-#content-botao-agende button{
+#section-2 button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,8 +218,9 @@ nav a{
     width: 200px;
     height: 50px;
     font-size: 25px;
+    margin-top: 7%;
 }
-#content-botao-agende a{
+#section-2 a{
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
