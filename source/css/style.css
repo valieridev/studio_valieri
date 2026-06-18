@@ -7,6 +7,9 @@
 :root #agendar-btn{
     --acent-color:#fefefe;
 }
+:root #subtitulo-glamour{
+    --acent-color:#fefefe;
+}
 :root img{
     --acent-color:#ffffff;
 }
@@ -93,6 +96,11 @@ nav a{
 }
 .content-titulos h2{
     color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: default;
+}
+#subtitulo-glamour{
+    color: #b3881a;
     transition: all 0.5s ease-in-out;
     cursor: default;
 }
