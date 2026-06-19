@@ -1,19 +1,6 @@
 :root{
     --acent-color:#b3881a;
 }
-:root #como-chegar-btn{
-    --acent-color:#fefefe;
-}
-:root #agendar-btn{
-    --acent-color:#fefefe;
-}
-:root #subtitulo-glamour{
-    --acent-color:#fefefe;
-}
-:root img{
-    --acent-color:#ffffff;
-}
-
 *{
     margin: 0px;
     padding: 0px;
@@ -27,7 +14,9 @@ a{
 html{
     max-width: 100vw;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+}
+#section-1, #section-2, #section-3 {
+    scroll-margin-top: 10vh; 
 }
 header{
     width: 100vw;
@@ -35,6 +24,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 nav{
     width: 100%;
@@ -57,6 +48,21 @@ li{
 } 
 nav a{
     color: white;
+    position: relative;
+}
+nav a::after{
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--acent-color);
+    transition: width ease-in-out 0.7s;
+}
+
+nav a:hover::after{
+    width: 100%;
 }
 .container-logo{
     display: flex;
@@ -94,23 +100,26 @@ nav a{
     font-weight: 400;
     font-style: italic;
 }
-.content-titulos h2{
+.content-titulos h2 {
     color: white;
     transition: all 0.5s ease-in-out;
     cursor: default;
 }
-#subtitulo-glamour{
-    color: #b3881a;
-    transition: all 0.5s ease-in-out;
-    cursor: default;
+#subtitulo-glamour {
+    --acent-color: #fefefe; 
+    color: var(--acent-color); 
+    color: #b3881a; 
 }
-
-.content-titulos h2:hover{
+.content-titulos h2:not(#subtitulo-glamour):hover {
     color: var(--acent-color);
     text-shadow: 0px 0px 100px rgb(0, 0, 0);
     transform: translateX(20px);
 }
-
+#subtitulo-glamour:hover {
+    color: #fefefe;
+    text-shadow: 0px 0px 100px rgb(0, 0, 0);
+    transform: translateX(20px);
+}
 /*tudo acima e dos h2 da section 1*/
 #botoes-section1{
     display: flex;
@@ -190,6 +199,7 @@ nav a{
     transition:  0.5s ease-in-out;
     cursor: pointer;
     border-radius: 20px;
+    --acent-color:#fefefe;
 }
 
 #section-2 img:hover{
@@ -228,6 +238,7 @@ nav a{
 
 #agendar-btn{ 
     background-color: var(--acent-color);
+    --acent-color:#fefefe;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
     width: 200px; 
@@ -277,6 +288,7 @@ nav a{
     transition:  0.5s ease-in-out;
     cursor: pointer;
     border-radius: 20px;
+    --acent-color:#fefefe;
 }
 #section-3 img:hover{
     transform: translateY(-10px);
@@ -314,6 +326,7 @@ nav a{
 /*acima esta os textos da section 3*/
 #como-chegar-btn{ 
     background-color: var(--acent-color);
+    --acent-color:#fefefe;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
     width: 200px; 
