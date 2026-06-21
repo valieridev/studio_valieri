@@ -227,13 +227,13 @@ nav a:hover::after{
     font-optical-sizing: auto; 
 }
 .sobre-lash-designer #titulo-maior{
-    font-size: clamp(30px,7vw,45px);
+    font-size: clamp(20px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
     color: #b3881a;
 }
 #section-2 p{
-    max-width: 40vw;
+    max-width: 50vw;
     hyphens: auto; 
     line-height: 25px;
     font-size: clamp(14px,3vw,20px);
@@ -316,14 +316,14 @@ nav a:hover::after{
     margin-left: 6%;
 }
 .sobre-o-espaco #titulo-maior-section3{
-    font-size: clamp(30px,7vw,45px);
+    font-size: clamp(20px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
     color: #b3881a;
     margin-left: 6%;
 }
 #section-3 p{
-    max-width: 40vw;
+    max-width: 50vw;
     hyphens: auto; /* hyphens é para quando quebrar o texto, botar o tracinho */
     line-height: 25px;
     font-size: clamp(14px,3vw,20px);
