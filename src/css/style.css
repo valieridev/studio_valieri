@@ -388,7 +388,7 @@ nav a:hover::after{
     font-size: clamp(30px,7vw,65px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
-    color: #fefefe;
+    color: #b3881a;
 }
 
 
