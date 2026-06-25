@@ -612,6 +612,18 @@ footer a:hover {
 }
 
 
+.texto {
+  opacity: 0;
+  transform: translateX(-50px); /* Empurra 50px para a esquerda */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform; /* Otimização de performance */
+}
+
+/* Estado quando a seção estiver visível na tela (ativado via JS) */
+.texto.appear {
+  opacity: 1;
+  transform: translateX(0); /* Volta para a posição original */
+}
 /*acima esta o footer*/
 
 @media (max-width: 768px) {
@@ -650,6 +662,10 @@ footer a:hover {
     #section-1 button img{
         max-width: 45px;
         max-height: 45px;
+    }
+    #section-1 #logo-wpp{
+        max-width: 45px;
+        max-height: 46px;
     }
     #section-1 .content-titulos{
         font-size: 55px;
