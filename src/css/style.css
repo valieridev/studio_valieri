@@ -1,46 +1,12 @@
-:root{
+:root {
     --acent-color: #b3881a;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-weight: normal; 
-    font-size: inherit;  
-}
-body{
-    background-color: black;
-}
-html, body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Corta vazamentos */
-    position: relative;
-}
-html::-webkit-scrollbar, 
-body::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem completamente */
-}
-
-/* Para Firefox e IE/Edge antigo */
-html, body {
-    -ms-overflow-style: none;  /* Esconde no IE e Edge antigo */
-    scrollbar-width: none;     /* Esconde no Firefox */
-}
-a{
-    text-decoration: none;
-}
-html{
-    max-width: 100vw;
-    overflow-x: hidden;
-}
 #section-1, #section-2, #section-3 {
     scroll-margin-top: 10vh; 
 }
-header{
+
+header {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -50,7 +16,8 @@ header{
     top: 0;
     z-index: 9999; /* garante que o header sempre esteja acima de todos os elementos*/
 }
-nav{
+
+nav {
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -59,22 +26,26 @@ nav{
     background-color: rgb(14, 14, 14);
     height: 100%;
 }
-ul{
+
+ul {
     margin: 5px 30px 0px 0px;
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 5vw;
 }
-li{
+
+li {
     color: white;
     font-size: clamp(18px,3vw,28px);
 } 
-nav a{
+
+nav a {
     color: white;
     position: relative;
 }
-nav a::after{
+
+nav a::after {
     position: absolute;
     content: '';
     bottom: -5px;
@@ -82,42 +53,40 @@ nav a::after{
     width: 0%;
     height: 3px;
     background-color: var(--acent-color);
-    transition: width ease-in-out 0.7s;
 }
 
-nav a:hover::after{
-    width: 100%;
-}
-.container-logo{
+.container-logo {
     display: flex;
 }
-#logo-salao{
+
+#logo-salao {
     min-width: 5vw;
     max-height: 8vh;
     padding-left: 2vw;
 }
 
-/*tudo acima e da header*/
+/* --- Section 1 --- */
 
-#section-1{
-    background-image: linear-gradient(rgba(0,0,0,0.5)),url(../img/imagem-estudio.jpeg) ;
+#section-1 {
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url(../img/imagem-estudio.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center center;
+    background-position: center center;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100vh;
 }
-.container-titulos-e-botoes{
+
+.container-titulos-e-botoes {
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     flex: 1;
     gap: 6vh;
 }
-.content-titulos{
+
+.content-titulos {
     margin: 0 0 0 6vw;
     color: white;
     font-size: clamp(40px, 7vw, 95px);
@@ -127,36 +96,26 @@ nav a:hover::after{
     font-weight: 400;
     font-style: italic;
 }
+
 .content-titulos h2 {
     color: white;
-    transition: all 0.5s ease-in-out;
     cursor: default;
 }
+
 #subtitulo-glamour {
     --acent-color: #fefefe; 
-    color: var(--acent-color); 
     color: #b3881a; 
 }
-.content-titulos h2:not(#subtitulo-glamour):hover {
-    color: var(--acent-color);
-    text-shadow: 0px 0px 100px rgb(0, 0, 0);
-    transform: translateX(20px);
-}
-#subtitulo-glamour:hover {
-    color: #fefefe;
-    text-shadow: 0px 0px 100px rgb(0, 0, 0);
-    transform: translateX(20px);
-}
-/*tudo acima e dos h2 da section 1*/
-#botoes-section1{
+
+#botoes-section1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 15px;
     margin-left: 10vw;
-    
 }
-.button-section1{
+
+.button-section1 {
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -166,7 +125,7 @@ nav a:hover::after{
     cursor: pointer;
 }
 
-.button-section1 a{
+.button-section1 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: "Inria Serif", serif;
@@ -175,38 +134,30 @@ nav a:hover::after{
     flex-grow: 1;
     text-align: left;
 }
-.button-section1 img{
+
+.button-section1 img {
     max-width: 55px;
     max-height: 55px;
     object-fit: contain;
-    transition: transform 0.2s ease;
 }
 
-.button-section1 img:hover {
-    transform: scale(1.1);
-}
-
-/*tudo acima sao os botoes do section 1*/
-.container-imagem-section1{
+.container-imagem-section1 {
     height: 100%;
-    /* width: 750px; */
     display: flex;
     align-items: end;
 }
-#content-mulheres-section1{
-    /* background-image: url(..//img/mulheres_s1.png); */
+
+#content-mulheres-section1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    /* width: 750px; */
     height: 70%;
     flex-shrink: 0;
 }
 
+/* --- Section 2 --- */
 
-/*literal tudo, botoes, h2. sao da section 1*/
-
-#section-2{
+#section-2 {
     position: relative;
     left: 2%;
     right: 2%;
@@ -223,41 +174,37 @@ nav a:hover::after{
     padding: 40px 20px;
 }
 
-#section-2 img{
+#section-2 img {
     max-width: 30vw;
     max-height: 70vh;
     margin-bottom: 5vh;
     margin-left: 3vw;
-    transition:  0.5s ease-in-out;
     cursor: pointer;
     border-radius: 20px;
 }
 
-#section-2 img:hover{
-    transform: translateY(-10px);
-    border: solid 3px var(--acent-color);
-}
-/*Acima esta a imagem da section 2*/
-
-.sobre-lash-designer{
+.sobre-lash-designer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;    
 }
-.sobre-lash-designer h3{
+
+.sobre-lash-designer h3 {
     color: white;
     font-size: clamp(15px,7vw,20px);
     font-family: "Edu NSW ACT Cursive", cursive;
     font-optical-sizing: auto; 
 }
-.sobre-lash-designer #titulo-maior-section2{
+
+.sobre-lash-designer #titulo-maior-section2 {
     font-size: clamp(20px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
     color: #b3881a;
 }
-#section-2 p{
+
+#section-2 p {
     max-width: 50vw;
     hyphens: auto; 
     line-height: 25px;
@@ -265,11 +212,7 @@ nav a:hover::after{
     color: white;
 }
 
-
-
-/*Acima esta os paragrafos e titulos da section 2*/
-
-#agendar-btn{ 
+#agendar-btn { 
     background-color: var(--acent-color);
     align-self: center;
     padding: 5px 10px 5px 10px;
@@ -279,27 +222,17 @@ nav a:hover::after{
     max-height: 50px;
     font-size: clamp(12px, 3vw, 25px);
     border: solid 2px var(--acent-color);
-    transition: ease-in-out 0.3s;
     cursor: pointer;
     text-align: center;
     margin-top: 5%;
     display: flex;
-    flex-flow: row nowrap ;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-#agendar-btn:hover{
-    background-color: black;
-    color: var(--acent-color);
-
-    & a{
-       color: white; 
-    }
-}
-
-#agendar-btn a{
+#agendar-btn a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
@@ -307,9 +240,9 @@ nav a:hover::after{
     font-style: normal;
 }
 
-/*Acima esta o botao agende da section 2*/
-/*acima esta a section 2*/
-#section-3{
+/* --- Section 3 --- */
+
+#section-3 {
     position: relative;
     left: 2%;
     right: 2%;
@@ -326,19 +259,15 @@ nav a:hover::after{
     align-items: center;
     gap: 8vw;
 }
-#section-3 img{
+
+#section-3 img {
     max-width: 30vw;
     max-height: 70vh;
-    transition: 0.5s ease-in-out;
     cursor: pointer;
     border-radius: 20px;
 }
-#section-3 img:hover{
-    transform: translateY(-10px);
-    border: solid 3px var(--acent-color);
-}
-/*acima esta as imagens da section 3*/
-.sobre-o-espaco{
+
+.sobre-o-espaco {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -346,14 +275,16 @@ nav a:hover::after{
     gap: 20px;    
     height: 100%;
 }
-.sobre-o-espaco h3{
+
+.sobre-o-espaco h3 {
     color: white;
     font-size: clamp(15px,7vw,20px);
     font-family: "Edu NSW ACT Cursive", cursive;
-    font-optical-sizing: auto; /* isso tava na fescrição da fonte no google fonts, ai eu so botei */
+    font-optical-sizing: auto;
     margin-left: 6%;
 }
-.sobre-o-espaco #titulo-maior-section3{
+
+.sobre-o-espaco #titulo-maior-section3 {
     font-size: clamp(20px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
@@ -361,7 +292,7 @@ nav a:hover::after{
     margin-left: 6%;
 }
 
-#section-3 p{
+#section-3 p {
     max-width: 50vw;
     hyphens: auto; 
     line-height: 25px;
@@ -369,8 +300,8 @@ nav a:hover::after{
     color: white;
     margin-left: 6%;
 }
-/*acima esta os textos da section 3*/
-#como-chegar-btn{ 
+
+#como-chegar-btn { 
     background-color: var(--acent-color);
     align-self: center;
     padding: 5px 10px 5px 10px;
@@ -380,32 +311,26 @@ nav a:hover::after{
     max-height: 50px;
     font-size: clamp(12px, 3vw, 25px);
     border: solid 2px var(--acent-color);
-    transition: ease-in-out 0.3s;
     cursor: pointer;
     text-align: center;
     margin-top: 5%;
     margin-left: 6%;
     display: flex;
-    flex-flow: row nowrap ;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-#como-chegar-btn:hover{
-    background-color: black;
-    color: var(--acent-color);
 
-    & a{
-       color: rgb(243, 240, 240); 
-    }
-}
-#como-chegar-btn a{
+#como-chegar-btn a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
-/*acima esta os botoes da section 3*/
+
+/* --- Section 4 --- */
+
 #section-4 {
     position: relative;
     left: 2%;
@@ -422,32 +347,30 @@ nav a:hover::after{
     justify-content: center;
     align-items: center;
     gap: 10vh;
-    padding-top: 8vh;       
+    padding-top: 8vh;      
     padding-bottom: 8vh;    
 }
-#titulos-section-4{
+
+#titulos-section-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#titulos-section-4 h3{
+
+#titulos-section-4 h3 {
     font-size: clamp(15px,3vw,35px);
     color: #fefefe;
     font-family: "Edu NSW ACT Cursive", cursive;
-    font-optical-sizing: auto; /* isso tava na fescrição da fonte no google fonts, ai eu so botei */
+    font-optical-sizing: auto;
 }
-#titulos-section-4 h1{
+
+#titulos-section-4 h1 {
     font-size: clamp(30px,7vw,65px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
     color: #b3881a;
 }
-
-
-/*acima esta os titulos da section-4*/
-
-
 
 #todos-os-servicos {
     display: grid;
@@ -458,6 +381,7 @@ nav a:hover::after{
     margin: 0 auto; 
     padding: 20px 0;
 }
+
 #todos-os-servicos div {
     width: 100%;
     max-width: 250px; 
@@ -471,25 +395,22 @@ nav a:hover::after{
     gap: 20px;
     padding: 20px;
 }
+
 #todos-os-servicos div img {
-    
     width: 100%;
     max-width: 220px; 
     height: auto; 
     aspect-ratio: 3 / 4; 
     object-fit: cover; 
     border-radius: 15px;
-    transition: 0.5s ease-in-out;
 }
+
 #todos-os-servicos div h2 {
     color: #fefefe;
     font-size: clamp(15px,4vw, 25px);
 }
-#section-4 img:hover{
-    transform: translateY(-10px);
-    border: solid 3px var(--acent-color);
-}
-#confira-btn{ 
+
+#confira-btn { 
     background-color: var(--acent-color);
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
@@ -498,35 +419,23 @@ nav a:hover::after{
     max-height: 50px;
     font-size: clamp(15px, 3vw, 25px);
     border: solid 2px var(--acent-color);
-    transition: ease-in-out 0.3s;
     cursor: pointer;
     text-align: center;
     display: flex;
-    flex-flow: row nowrap ;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-span{
-    font-size: 10px;
-}
-#confira-btn:hover{
-    background-color: black;
-    color: var(--acent-color);
 
-    & a{
-       color: white; 
-    }
-}
-#confira-btn a{
+#confira-btn a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
-
-/*acima esta a parte de servicos da section 4*/
+/* --- WhatsApp Flutuante --- */
 
 #wpp-flutuante {
     background: transparent;
@@ -540,7 +449,6 @@ span{
     padding: 0;
     cursor: pointer;
 }
-
 
 #wpp-flutuante a {
     display: flex;
@@ -556,7 +464,7 @@ span{
     object-fit: contain; 
 }
 
-/*acima esta o botao do whatsapp flutuante*/
+/* --- Footer --- */
 
 footer {
     width: 100%;
@@ -571,7 +479,6 @@ footer {
     box-sizing: border-box;
 }
 
-
 .coluna-footer {
     display: flex;
     flex-direction: column;
@@ -580,14 +487,13 @@ footer {
     min-width: 180px;
 }
 
-
 .bloco-marcas {
-    align-items: flex-start;
+    align-items: center;
 }
 
 footer #logo-footer {
     width: 70px;
-    height: auto;
+    max-height: 70px;
 }
 
 #botoes-footer {
@@ -600,26 +506,17 @@ footer #logo-footer {
     max-width: 45px;
     max-height: 45px;
     object-fit: contain;
-    transition: transform 0.2s ease;
 }
+
 #botoes-footer #logo-wpp-footer {
     max-width: 44px;
     max-height: 44px;
     object-fit: contain;
-    transition: transform 0.2s ease;
 }
-
-
-
-#botoes-footer img:hover {
-    transform: scale(1.1);
-}
-
 
 .link-endereco {
     flex: 1.5; 
 }
-
 
 footer p, footer a {
     font-size: clamp(13px, 1.2vw, 16px);
@@ -628,268 +525,9 @@ footer p, footer a {
     font-family: "Poppins", sans-serif;
 }
 
-footer a:hover {
-    color: #b3881a; /* Cor dourada do seu tema ao passar o mouse */
-}
+/* --- Elementos Gerais --- */
 
-/*acima esta o footer*/
-
-/*animação dos textos abaixo*/
-.texto {
-  opacity: 0;
-  transform: translateX(-50px); /* Empurra 50px para a esquerda */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, transform; /* Otimização de performance */
-}
-
-/* Estado quando a seção estiver visível na tela (ativado via JS) */
-.texto.appear {
-  opacity: 1;
-  transform: translateX(0); /* Volta para a posição original */
-}
-span{
+span {
+    font-size: 10px;
     color: white;
-}
-
-@media (max-width: 768px) {
-    #section-2, #section-3, #section-4 {
-        background-color: transparent; 
-        padding: 20px 10px;
-    }
-    .sobre-lash-designer #titulo-maior-section2,
-    .sobre-o-espaco #titulo-maior-section3,
-    #section-2 p, 
-    #section-3 p{
-        background-color: rgb(10, 10, 10); 
-        padding: 10px 20px;
-        margin: 0;
-        margin-bottom: -25px;
-        width: 100%;
-        max-width: 95vw;
-        box-sizing: border-box;
-    }
-    #titulo-maior-section2,
-    #titulo-maior-section3{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    #section-2 p:last-of-type, #section-3 p:last-of-type {
-        padding-bottom: 30px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-bottom: 0; 
-    }
-    #section-1{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center bottom;
-    }
-    #section-1 button img{
-        max-width: 45px;
-        max-height: 45px;
-    }
-    
-    #section-1 #logo-wpp{
-        max-width: 45px;
-        max-height: 46px;
-    }
-    #section-1 .content-titulos{
-        font-size: 55px;
-    }
-    #section-2 {
-        display: flex;
-        flex-direction: column; 
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-    }
-
-    
-    .sobre-lash-designer {
-        display: contents; 
-    }
-
-    /* 1º Lugar: O h3 */
-    .sobre-lash-designer h3 {
-        order: 1;
-        margin-left: 0;
-    }
-
-    /* 2º Lugar: A imagem */
-    #content-imagem-section2 {
-        order: 2;
-    }
-    #section-2 img {
-        max-width: 60vw; 
-        max-height: 40vh;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-
-    /* 3º Lugar: O h2 (Título maior) */
-    .sobre-lash-designer #titulo-maior-section2 {
-        order: 3;
-        margin-left: 5px;
-        text-align: center;
-    }
-
-    /* 4º Lugar: Os parágrafos */
-    #section-2 p {
-        order: 4;
-        max-width: 90vw; 
-        margin-left: 0;
-    }
-
-    /* 5º Lugar: O botão */
-    #agendar-btn {
-        order: 5;
-        margin-left: 0; 
-        margin-top: 15px;
-        height: 40px;
-        font-size: clamp(18px, 3vw, 20px);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    }
-    
-
-    #section-3 {
-        display: flex;
-        flex-direction: column; 
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-    }
-
-    
-    .sobre-o-espaco {
-        display: contents; 
-    }
-
-    /* 1º Lugar: O h3 */
-    .sobre-o-espaco h3 {
-        order: 1;
-        margin-left: 0;
-    }
-
-    /* 2º Lugar: A imagem */
-    #content-imagem-section3 {
-        order: 2;
-    }
-    #section-3 img {
-        max-width: 60vw; 
-        max-height: 40vh;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-
-    /* 3º Lugar: O h2 (Título maior) */
-    .sobre-o-espaco #titulo-maior-section3 {
-        order: 3;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    /* 4º Lugar: Os parágrafos */
-    #section-3 p {
-        order: 4;
-        max-width: 90vw; 
-        margin-left: 0;
-    }
-
-    /* 5º Lugar: O botão */
-    #como-chegar-btn {
-        order: 5;
-        margin-left: 0; 
-        margin-top: 15px;
-        height: 40px;
-        font-size: clamp(18px, 3vw, 20px);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    }#confira-btn {
-        margin-left: 0; 
-        margin-top: 15px;
-        height: 40px;
-        font-size: clamp(18px, 3vw, 20px);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    /* ... resto do seu media query ... */
-
-    #section-4{
-        gap: 5vh;
-    }
-    #section-4 h2{
-        font-size: clamp(18px, 3vw, 20px);
-        font-weight: 800;
-    }
-    
-    nav {
-        padding: 0 10px;
-        width: 100%;
-        box-sizing: border-box;
-        justify-content: space-between;
-    }
-
-    
-    ul {
-        margin: 0;
-        gap: 20px; 
-        flex-wrap: wrap; 
-        justify-content: flex-end;
-        padding-right: 5px;
-    }
-
-    
-    li {
-        font-size: 14px; 
-    }
-    
-    nav a {
-        padding: 2px 4px;
-    }
-    nav img {
-        width: 60px;
-        height: 50px;
-    }
-
-    
-    #wpp-flutuante {
-        position: fixed;
-        width: 70px;
-        height: 70px;
-        right: 15px ; 
-        bottom: 15px;
-        z-index: 99999;
-    }
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 35px;
-        padding: 40px 20px;
-        height: auto; 
-    }
-    .coluna-footer {
-        width: 100%;
-        align-items: center;
-    }
-    .link-endereco {
-        flex: none;
-    }
-    button{
-        height: 40px;
-        font-size: clamp(15px, 3vw, 20px);
-    }
 }

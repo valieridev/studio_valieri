@@ -1,0 +1,107 @@
+.texto {
+  opacity: 0;
+  transform: translateX(-50px); 
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform; 
+}
+.texto.appear {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+/* --- Links do Menu (Header) --- */
+nav a::after {
+    transition: width ease-in-out 0.7s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* --- Títulos da Section 1 (Efeitos de Texto) --- */
+.content-titulos h2 {
+    transition: all 0.5s ease-in-out;
+}
+
+.content-titulos h2:not(#subtitulo-glamour):hover {
+    color: var(--acent-color);
+    text-shadow: 0px 0px 100px rgb(0, 0, 0);
+    transform: translateX(20px);
+}
+
+#subtitulo-glamour:hover {
+    color: #fefefe;
+    text-shadow: 0px 0px 100px rgb(0, 0, 0);
+    transform: translateX(20px);
+}
+
+/* --- Botões da Section 1 --- */
+.button-section1 img {
+    transition: transform 0.2s ease;
+}
+
+.button-section1 img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Imagens das Sections 2, 3 e 4 (Efeito de Elevação e Borda) --- */
+#section-2 img, 
+#section-3 img,
+#todos-os-servicos div img {
+    transition: 0.5s ease-in-out;
+}
+
+#section-2 img:hover, 
+#section-3 img:hover,
+#section-4 img:hover {
+    transform: translateY(-10px);
+    border: solid 3px var(--acent-color);
+}
+
+/* --- Botão Agendar (Section 2) --- */
+#agendar-btn {
+    transition: ease-in-out 0.3s;
+}
+
+#agendar-btn:hover {
+    background-color: black;
+    color: var(--acent-color);
+}
+
+/* --- Botão Como Chegar (Section 3) --- */
+#como-chegar-btn {
+    transition: ease-in-out 0.3s;
+}
+
+#como-chegar-btn:hover {
+    background-color: black;
+    color: var(--acent-color);
+}
+
+/* --- Botão Confira (Section 4) --- */
+#confira-btn {
+    transition: ease-in-out 0.3s;
+}
+
+#confira-btn:hover {
+    background-color: black;
+    color: var(--acent-color);
+}
+
+/* --- Elementos do Rodapé (Footer) --- */
+#botoes-footer img, 
+#botoes-footer #logo-wpp-footer {
+    transition: transform 0.2s ease;
+}
+
+#botoes-footer img:hover {
+    transform: scale(1.1);
+}
+
+footer a {
+    transition: color 0.3s ease; /* Adicionado para suavizar a troca de cor do link */
+}
+
+footer a:hover {
+    color: #b3881a;
+}

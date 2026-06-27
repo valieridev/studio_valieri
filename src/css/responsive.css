@@ -1,0 +1,242 @@
+@media (max-width: 768px) {
+    #section-2, #section-3, #section-4 {
+        background-color: transparent; 
+        padding: 20px 10px;
+    }
+    .sobre-lash-designer #titulo-maior-section2,
+    .sobre-o-espaco #titulo-maior-section3,
+    #section-2 p, 
+    #section-3 p{
+        background-color: rgb(10, 10, 10); 
+        padding: 10px 20px;
+        margin: 0;
+        margin-bottom: -25px;
+        width: 100%;
+        max-width: 95vw;
+        box-sizing: border-box;
+    }
+    #titulo-maior-section2,
+    #titulo-maior-section3{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #section-2 p:last-of-type, #section-3 p:last-of-type {
+        padding-bottom: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 0; 
+    }
+    #section-1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    #section-1 button img{
+        max-width: 45px;
+        max-height: 45px;
+    }
+    
+    #section-1 #logo-wpp{
+        max-width: 45px;
+        max-height: 46px;
+    }
+    #section-1 .content-titulos{
+        font-size: 55px;
+    }
+    #section-2 {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    
+    .sobre-lash-designer {
+        display: contents; 
+    }
+
+    /* 1º Lugar: O h3 */
+    .sobre-lash-designer h3 {
+        order: 1;
+        margin-left: 0;
+    }
+
+    /* 2º Lugar: A imagem */
+    #content-imagem-section2 {
+        order: 2;
+    }
+    #section-2 img {
+        max-width: 60vw; 
+        max-height: 40vh;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* 3º Lugar: O h2 (Título maior) */
+    .sobre-lash-designer #titulo-maior-section2 {
+        order: 3;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    /* 4º Lugar: Os parágrafos */
+    #section-2 p {
+        order: 4;
+        max-width: 90vw; 
+        margin-left: 0;
+    }
+
+    /* 5º Lugar: O botão */
+    #agendar-btn {
+        order: 5;
+        margin-left: 0; 
+        margin-top: 15px;
+        height: 40px;
+        font-size: clamp(18px, 3vw, 20px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+
+    #section-3 {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    
+    .sobre-o-espaco {
+        display: contents; 
+    }
+
+    /* 1º Lugar: O h3 */
+    .sobre-o-espaco h3 {
+        order: 1;
+        margin-left: 0;
+    }
+
+    /* 2º Lugar: A imagem */
+    #content-imagem-section3 {
+        order: 2;
+    }
+    #section-3 img {
+        max-width: 60vw; 
+        max-height: 40vh;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* 3º Lugar: O h2 (Título maior) */
+    .sobre-o-espaco #titulo-maior-section3 {
+        order: 3;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* 4º Lugar: Os parágrafos */
+    #section-3 p {
+        order: 4;
+        max-width: 90vw; 
+        margin-left: 0;
+    }
+
+    /* 5º Lugar: O botão */
+    #como-chegar-btn {
+        order: 5;
+        margin-left: 0; 
+        margin-top: 15px;
+        height: 40px;
+        font-size: clamp(18px, 3vw, 20px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }#confira-btn {
+        margin-left: 0; 
+        margin-top: 15px;
+        height: 40px;
+        font-size: clamp(18px, 3vw, 20px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    /* ... resto do seu media query ... */
+
+    #section-4{
+        gap: 5vh;
+    }
+    #section-4 h2{
+        font-size: clamp(18px, 3vw, 20px);
+        font-weight: 800;
+    }
+    
+    nav {
+        padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    
+    ul {
+        margin: 0;
+        gap: 20px; 
+        flex-wrap: wrap; 
+        justify-content: flex-end;
+        padding-right: 5px;
+    }
+
+    
+    li {
+        font-size: 14px; 
+    }
+    
+    nav a {
+        padding: 2px 4px;
+    }
+    nav img {
+        width: 60px;
+        height: 50px;
+    }
+
+    
+    #wpp-flutuante {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        right: 15px ; 
+        bottom: 15px;
+        z-index: 99999;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+        padding: 40px 20px;
+        height: auto; 
+    }
+    .coluna-footer {
+        width: 100%;
+        align-items: center;
+    }
+    .link-endereco {
+        flex: none;
+    }
+    button{
+        height: 40px;
+        font-size: clamp(15px, 3vw, 20px);
+    }
+}
