@@ -349,7 +349,7 @@ nav a::after {
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 25px;
-    background: radial-gradient(rgb(21, 21, 21) 0% 55%, rgb(7, 7, 7) 75% 100%);
+    background: radial-gradient(rgb(21, 21, 21) 0% 50%, rgb(7, 7, 7) 75% 100%);
     width: 95%;
     min-height: 95vh;
     height: 95%;
