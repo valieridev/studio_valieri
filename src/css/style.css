@@ -1,5 +1,5 @@
 :root {
-    --acent-color: #b3881a;
+    --acent-color: #daa520a0;
 }
 
 #section-1, #section-2, #section-3 {
@@ -104,7 +104,7 @@ nav a::after {
 
 #subtitulo-glamour {
     --acent-color: #fefefe; 
-    color: #b3881a; 
+    color: #daa520a0;
 }
 
 #botoes-section1 {
@@ -181,6 +181,7 @@ nav a::after {
     margin-left: 3vw;
     cursor: pointer;
     border-radius: 20px;
+    box-shadow: 0 0 50px 10px rgba(218, 165, 32, 0.35);
 }
 
 .sobre-lash-designer {
@@ -201,7 +202,11 @@ nav a::after {
     font-size: clamp(20px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
-    color: #b3881a;
+    background-image: linear-gradient(135deg, #82700e 0%, #f2c34c 50%, #82700e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 #section-2 p {
@@ -220,7 +225,7 @@ nav a::after {
     width: 100%;
     max-width: 430px; 
     max-height: 50px;
-    font-size: clamp(12px, 3vw, 25px);
+    font-size: clamp(15px, 3vw, 25px);
     border: solid 2px var(--acent-color);
     cursor: pointer;
     text-align: center;
@@ -265,6 +270,8 @@ nav a::after {
     max-height: 70vh;
     cursor: pointer;
     border-radius: 20px;
+    box-shadow: 0 0 50px 10px rgba(218, 165, 32, 0.35);
+    
 }
 
 .sobre-o-espaco {
@@ -288,7 +295,11 @@ nav a::after {
     font-size: clamp(20px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
-    color: #b3881a;
+    background-image: linear-gradient(135deg, #82700e 0%, #f2c34c 50%, #82700e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
     margin-left: 6%;
 }
 
@@ -309,7 +320,7 @@ nav a::after {
     width: 100%;
     max-width: 250px; 
     max-height: 50px;
-    font-size: clamp(12px, 3vw, 25px);
+    font-size: clamp(15px, 3vw, 25px);
     border: solid 2px var(--acent-color);
     cursor: pointer;
     text-align: center;
@@ -338,7 +349,7 @@ nav a::after {
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 25px;
-    background-color: rgb(7, 7, 7);
+    background: radial-gradient(rgb(21, 21, 21) 0% 55%, rgb(7, 7, 7) 75% 100%);
     width: 95%;
     min-height: 95vh;
     height: 95%;
@@ -359,8 +370,12 @@ nav a::after {
 }
 
 #titulos-section-4 h3 {
-    font-size: clamp(15px,3vw,35px);
-    color: #fefefe;
+    font-size: clamp(25px,3vw,45px);
+    background-image: linear-gradient(135deg, #82700e 0%, #e6c36b 50%, #82700e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
     font-family: "Edu NSW ACT Cursive", cursive;
     font-optical-sizing: auto;
 }
@@ -369,7 +384,11 @@ nav a::after {
     font-size: clamp(30px,7vw,65px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
-    color: #b3881a;
+    background-image: linear-gradient(135deg, #82700e 0%, #e6c36b 50%, #82700e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 #todos-os-servicos {
@@ -392,6 +411,7 @@ nav a::after {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+    border: 2px rgba(255, 255, 255, 0.296) solid;
     gap: 20px;
     padding: 20px;
 }
