@@ -46,9 +46,9 @@ nav a:hover::after {
 
 /* --- Imagens das Sections 2, 3 e 4 (Efeito de Elevação e Borda) --- */
 #section-2 img, 
-#section-3 img,
-#todos-os-servicos div img {
-    transition: 0.8s ease-in-out;
+#section-3 img
+{
+    transition: ease-in-out 0.8s ;
 }
 
 #section-2 img:hover, 
@@ -58,7 +58,7 @@ nav a:hover::after {
 }
 .cards-servicos:hover {
     box-shadow: 0 0 25px 5px rgba(218, 165, 32, 0.5);
-    transition: 0.5s ease-in-out;
+    transition: ease-in-out 0.5s;
 }
 
 /* --- Botão Agendar (Section 2) --- */

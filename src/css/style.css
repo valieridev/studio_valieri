@@ -271,7 +271,6 @@ nav a::after {
     cursor: pointer;
     border-radius: 20px;
     box-shadow: 0 0 50px 10px rgba(218, 165, 32, 0.35);
-    
 }
 
 .sobre-o-espaco {
@@ -349,7 +348,7 @@ nav a::after {
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 25px;
-    background: radial-gradient(rgb(21, 21, 21) 0% 50%, rgb(7, 7, 7) 75% 100%);
+    background: radial-gradient(rgb(17, 17, 17) 0% 50%, rgb(7, 7, 7) 75% 100%);
     width: 95%;
     min-height: 95vh;
     height: 95%;
