@@ -478,6 +478,82 @@ nav a::after {
     height: 100%;
     object-fit: contain; 
 }
+/* --- Section 5 --- */
+#section-5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#titulo-mobile {
+    display: none; 
+}
+#section-5 #titulo-desktop{
+    
+    font-size: clamp(25px,7vw,45px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    background-image: linear-gradient(135deg, #82700e 0%, #e6c36b 50%, #82700e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+}
+hr{
+    border: none;               
+    height: 2px;                
+    background-color: #e6c36b;  
+    width: 80px;                
+    margin: 20px auto;
+}
+#section-5 span{
+    color: rgb(98, 97, 97);
+}
+#section-5 p{
+    color: rgb(98, 97, 97);
+    font-size: clamp(12px, 7vw, 17px);
+    
+}
+#section-5 h4{
+    margin-top: auto;
+    padding-bottom: 2px;
+    font-size: clamp(12px, 7vw, 17px);
+}
+.stars{
+    color: #f2c34c;
+    padding-bottom: 15px;
+    font-size: clamp(12px, 7vw, 17px);
+}
+
+.container-depoimentos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 30px; 
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.cards-depoimentos{
+    width: 100%;
+    max-width: 330px; 
+    margin: 0 auto; 
+    min-height: 160px; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 8px;
+    box-shadow: 5px 5px 15px 0px rgba(241, 233, 233, 0.797);
+}
+
 
 /* --- Footer --- */
 
@@ -545,80 +621,5 @@ footer p, footer a {
 span {
     font-size: 10px;
     color: white;
-}
-
-#section-5{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-.titulo-mobile {
-    display: none; 
-}
-#section-5 .titulo-desktop{
-    
-    font-size: clamp(25px,7vw,45px);
-    font-family: "Inria Serif", serif;
-    font-weight: 600;
-    background-image: linear-gradient(135deg, #82700e 0%, #e6c36b 50%, #82700e 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    
-}
-hr{
-    border: none;               
-    height: 2px;                
-    background-color: #e6c36b;  
-    width: 80px;                
-    margin: 20px auto;
-}
-#section-5 span{
-    color: grey;
-}
-#section-5 p{
-    color: grey;
-    font-size: clamp(12px, 7vw, 17px);
-    
-}
-#section-5 h4{
-    margin-top: auto;
-    padding-bottom: 2px;
-    font-size: clamp(12px, 7vw, 17px);
-}
-.stars{
-    color: #f2c34c;
-    padding-bottom: 15px;
-    font-size: clamp(12px, 7vw, 17px);
-}
-
-.container-depoimentos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-    gap: 30px; 
-    width: 90%; 
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 20px 0;
-    margin-bottom: 20px;
-}
-.cards-depoimentos{
-    width: 100%;
-    max-width: 330px; 
-    margin: 0 auto; 
-    min-height: 160px; 
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    border: 2px solid gold;
-    border-radius: 10px;
-    padding: 15px;
-    gap: 8px;
-    box-shadow: 5px 5px 15px 0px rgba(241, 233, 233, 0.8);
 }
 

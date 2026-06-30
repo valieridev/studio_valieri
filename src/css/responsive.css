@@ -253,10 +253,10 @@
         width: 50px;
         margin: 10px auto;
     }
-    .titulo-desktop {
+    #titulo-desktop {
         display: none; 
     }
-    .titulo-mobile {
+    #titulo-mobile {
         display: block; 
         font-size: 30px;
         font-family: "Inria Serif", serif;
