@@ -95,7 +95,7 @@
         margin-top: 15px;
         height: 40px;
         max-width: 270px;
-        font-size: clamp(15px, 3vw, 25px);
+        font-size: clamp(15px, 3vw, 20px);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -156,7 +156,7 @@
         margin-top: 15px;
         height: 40px;
         max-width: 200px;
-        font-size: clamp(15px, 4vw, 25px);
+        font-size: clamp(15px, 4vw, 20px);
         display: flex;
         flex-direction: row;
         align-items: center;

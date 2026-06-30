@@ -181,7 +181,7 @@ nav a::after {
     margin-left: 3vw;
     cursor: pointer;
     border-radius: 20px;
-    box-shadow: 0 0 50px 10px rgba(218, 165, 32, 0.35);
+    box-shadow: 0px 0px 50px 10px rgba(218, 165, 32, 0.35);
 }
 
 .sobre-lash-designer {
@@ -219,13 +219,11 @@ nav a::after {
 
 #agendar-btn { 
     background-color: var(--acent-color);
-    align-self: center;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    width: 100%;
     max-width: 430px; 
     max-height: 50px;
-    font-size: clamp(15px, 3vw, 25px);
+    font-size: clamp(12px, 4.5vw, 25px);
     border: solid 2px var(--acent-color);
     cursor: pointer;
     text-align: center;
@@ -235,6 +233,7 @@ nav a::after {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    white-space: nowrap;
 }
 
 #agendar-btn a {
@@ -242,7 +241,6 @@ nav a::after {
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal;
 }
 
 /* --- Section 3 --- */
@@ -313,11 +311,9 @@ nav a::after {
 
 #como-chegar-btn { 
     background-color: var(--acent-color);
-    align-self: center;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    width: 100%;
-    max-width: 250px; 
+    max-width: 270px; 
     max-height: 50px;
     font-size: clamp(15px, 3vw, 25px);
     border: solid 2px var(--acent-color);
@@ -337,6 +333,7 @@ nav a::after {
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    
 }
 
 /* --- Section 4 --- */
@@ -433,7 +430,6 @@ nav a::after {
     background-color: var(--acent-color);
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    width: 100%;
     max-width: 430px; 
     max-height: 50px;
     font-size: clamp(15px, 3vw, 25px);
