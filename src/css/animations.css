@@ -1,10 +1,44 @@
-.texto {
+/* --- classe animação foi adicionada e colocada nos textos e titulos --- */
+
+.animacao {
+  opacity: 0;
+  transform: translateX(-50px); 
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; 
+}
+.animacao.appear {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+/* --- section de serviços --- */
+
+.cards-servicos {
   opacity: 0;
   transform: translateX(-50px); 
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   will-change: opacity, transform; 
 }
-.texto.appear {
+.cards-servicos.appear {
+  opacity: 1;
+  transform: translateX(0); 
+}
+.cards-servicos:nth-child(1) { transition-delay: 0s; }
+
+.cards-servicos:nth-child(2) { transition-delay: 0.2s; }
+
+.cards-servicos:nth-child(3) { transition-delay: 0.4s; }
+
+.cards-servicos:nth-child(4) { transition-delay: 0.6s; }
+
+/* --- animação dos botoes --- */
+.botoes {
+  opacity: 0;
+  transform: translateX(-50px); 
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; 
+}
+.botoes.appear {
   opacity: 1;
   transform: translateX(0); 
 }
