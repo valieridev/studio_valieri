@@ -8,6 +8,12 @@
         padding: 0 20px; 
         box-sizing: border-box;
     }
+    #logo-salao {
+    min-width: 10vw;
+    max-height: 12vh;
+    position: relative;
+    left: 2vw;
+    }
 
     /* Exibe o botão hambúrguer no mobile */
     .menu-toggle {
@@ -110,7 +116,7 @@
     #section-1{
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: right bottom;
     }
     #section-1 button img{
         max-width: 45px;

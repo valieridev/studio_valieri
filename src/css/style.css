@@ -32,12 +32,15 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 5vw;
+    gap: 6vw;
 }
 
 li {
     color: white;
-    font-size: clamp(18px,3vw,28px);
+    font-size: clamp(20px,7vw,32px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    font-style: normal;
 } 
 
 nav a {
@@ -85,14 +88,16 @@ nav a::after {
 
 #logo-salao {
     min-width: 5vw;
-    max-height: 8vh;
-    padding-left: 2vw;
+    max-height: 12vh;
+    position: relative;
+    left: 2vw;
+    top: 5px;
 }
 
 /* --- Section 1 --- */
 
 #section-1 {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url(../img/imagem-estudio.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/imagem-estudio.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -165,19 +170,7 @@ nav a::after {
     object-fit: contain;
 }
 
-.container-imagem-section1 {
-    height: 100%;
-    display: flex;
-    align-items: end;
-}
 
-#content-mulheres-section1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom right;
-    height: 70%;
-    flex-shrink: 0;
-}
 
 /* --- Section 2 --- */
 
