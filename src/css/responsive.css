@@ -45,7 +45,7 @@
         position: fixed;
         top: 10vh; 
         right: -60%; 
-        width: 30%;
+        width: 28%;
         min-height: 25vh; 
         background-color: rgba(14, 14, 14, 0.98); 
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); 
@@ -54,6 +54,7 @@
         box-sizing: border-box;
         transition: all 0.4s ease-in-out;
         z-index: 9999;
+        border-radius: 10px;
     }
 
     
