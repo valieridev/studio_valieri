@@ -9,7 +9,7 @@
         box-sizing: border-box;
     }
     #logo-salao {
-    min-width: 10vw;
+    min-width: 5vw;
     max-height: 12vh;
     position: relative;
     left: 2vw;

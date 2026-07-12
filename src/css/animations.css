@@ -168,3 +168,39 @@ footer a:hover {
 
 
 .cards-depoimentos:nth-child(3) { transition-delay: 0.4s; }
+
+.botoes span{
+    animation-play-state: paused;
+    transition: all 0.8s ease;
+}
+.botoes:hover span{
+    animation: flutuacao 0.8s infinite alternate;
+    animation-play-state: running; 
+}
+#como-chegar-btn span{
+    animation-play-state: paused;
+    transition: all 0.8s ease;
+    transform: rotate(90deg);
+}
+#como-chegar-btn:hover span{
+    animation: lupa 0.8s infinite alternate;
+    animation-play-state: running;
+}
+@keyframes flutuacao{
+    from{
+        transform: translateY(0px);
+        
+    }to{
+        transform: translateY(-3px);
+        
+    }
+}
+@keyframes lupa{
+    from{
+        transform: rotate(90deg);
+        
+    }to{
+        transform: rotate(110deg);
+        
+    }
+}
