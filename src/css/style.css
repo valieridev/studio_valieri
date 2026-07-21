@@ -440,7 +440,7 @@ nav a::after {
 
 #todos-os-servicos div h2 {
     color: #fefefe;
-    font-size: clamp(15px,4vw, 25px);
+    font-size: 1.4vw;
 }
 
 #confira-btn { 
