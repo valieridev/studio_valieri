@@ -1,5 +1,7 @@
 @media (max-width: 620px) {
-
+    header #agendar-btn{
+        display: none;
+    }
     nav {
         display: flex;
         justify-content: space-between;
