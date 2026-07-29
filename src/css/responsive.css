@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 620px) {
 
     nav {
         display: flex;
@@ -268,8 +268,16 @@
         gap: 5vh;
     }
     #todos-os-servicos div h2{
-        font-size: 4.5vw;
-        font-weight: 600;
+        font-size: clamp(12px, 4vw, 20px);
+        font-weight: 500;
+        
+    }
+    #todos-os-servicos div{
+        max-width: 210px;
+        min-height: 260px; 
+    }
+    #todos-os-servicos{
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
     }
     
     nav {
@@ -359,5 +367,18 @@
     .cards-depoimentos{
         max-width: 75vw;
         min-height: 25vh;
+    }
+
+    /* faixa entre sessoes*/
+
+    .headerFaixa h1{
+        font-size: 7vw;
+    }
+    .headerFaixa h3{
+        font-size: 5vw;
+    }
+
+    .features p{
+        font-size: 3.5vw;
     }
 }

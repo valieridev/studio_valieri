@@ -204,3 +204,12 @@ footer a:hover {
         
     }
 }
+
+
+
+/* section faixa*/
+
+.features:hover{
+    scale: 1.1;
+}
+
