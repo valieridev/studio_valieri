@@ -257,3 +257,86 @@ h1,h2{
     font-size: clamp(18px,3vw,25px);
     margin-top: 35px;
 }
+/* -- Tabela de valores -- */
+
+#section-precos{
+    width: 100%;
+    background: radial-gradient(rgb(12, 12, 12) 0% 50%, rgb(9, 9, 9) 75% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    gap: 40px;
+}
+/*intro sessao*/
+.containerIntroPrecos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+.containerIntroPrecos h2{
+    font-size: clamp(20px,3vw,28px);
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+.containerIntroPrecos h1{
+    font-size: clamp(32px,6vw,52px);
+    font-family: "Inria Serif", serif;
+    font-weight: 500;
+}
+.containerIntroPrecos hr{
+    width: 70px;
+    height: 1px;
+    border: none;
+    margin-top: 10px;
+    background: linear-gradient(90deg, transparent, #daa520, transparent);
+}
+
+/* -- Tabela -- */
+.containerTabelaPrecos{
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linhaPreco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 4px;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.15);
+    gap: 20px;
+}
+
+.nomeServico{
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(14px,2.5vw,17px);
+    color: #d8d8d8;
+}
+.nomeServico em{
+    font-style: normal;
+    font-size: 0.75em;
+    color: #8a8a8a;
+    display: block;
+}
+
+.valorServico{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: clamp(13px,2.2vw,15px);
+    color: #e6c36b;
+    background: linear-gradient(145deg, #1c1a15, #0f0f0f);
+    border: 1px solid rgba(218, 165, 32, 0.3);
+    border-radius: 999px;
+    padding: 8px 20px;
+    white-space: nowrap;
+}
+
+#section-precos #agendar-btn{
+    border: none;
+    border-radius: 15px;
+    font-size: clamp(18px,3vw,25px);
+    margin-top: 35px;
+}
