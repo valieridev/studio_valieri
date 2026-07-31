@@ -47,7 +47,7 @@
         position: fixed;
         top: 10vh; 
         right: -60%; 
-        width: 28%;
+        width: 42%;
         min-height: 25vh; 
         background-color: rgba(14, 14, 14, 0.98); 
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); 
@@ -62,7 +62,7 @@
     
    
     .nav-menu li {
-        font-size: 18px; 
+        font-size: clamp(15px,2vw,18px); 
     }
 
    
@@ -384,3 +384,159 @@
         font-size: 3.5vw;
     }
 }
+
+/*ajuste de botao para menu*/
+@media (max-width: 1085px){
+    header #agendar-btn{
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px; 
+        box-sizing: border-box;
+    }
+    #logo-salao {
+    min-width: 5vw;
+    max-height: 12vh;
+    position: relative;
+    left: 2vw;
+    }
+
+    /* Exibe o botão hambúrguer no mobile */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10000; 
+    }
+
+    .menu-toggle .bar {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start;
+        gap: 25px;
+        position: fixed;
+        top: 10vh; 
+        right: -60%; 
+        width: 42%;
+        min-height: 25vh; 
+        background-color: rgba(14, 14, 14, 0.98); 
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); 
+        margin: 0; 
+        padding: 20px 20px; 
+        box-sizing: border-box;
+        transition: all 0.4s ease-in-out;
+        z-index: 9999;
+        border-radius: 10px;
+    }
+
+    
+   
+    .nav-menu li {
+        font-size: clamp(15px,2vw,18px); 
+    }
+
+   
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+        background-color: var(--acent-color);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+        background-color: var(--acent-color);
+    }
+
+    
+    nav a::after {
+        display: none !important;
+    }
+}
+/*pagina servicos*/
+
+@media (max-width: 900px){
+    .itensServicos{
+        flex: 0 1 calc((100% - 2*24px) / 3); /* 3 por linha */
+    }
+    .containerFotos{grid-template-columns:repeat(2,1fr)}
+    .fotos{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 520px){
+    
+    
+    
+
+    /* containers iniciais da sessao serviços*/
+    .containerIntroService{
+        padding: 10px 10px;
+    }
+    .containerIntroService h2{
+        font-size: 22px;
+    }
+    .containerIntroService h1{
+        font-size: 25px;
+        
+    }
+    .containerIntroService p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .containerIntroService h3{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* -- itens do meio da sessao serviços-- */
+
+    .itensServicos{
+        flex: 0 1 calc((100% - 1*24px) / 2);
+        transform: translateY(30px); /* vertical em vez de horizontal */
+    }
+
+    /* -- fim da sessao --*/
+
+
+    .containerFimService{
+        padding: 10px 10px;
+    }
+    .containerFimService h2{
+        font-size: 22px;
+    }
+    
+    .containerFimService p{
+        font-size: 14px;
+        width: 100%;
+    }
+    
+}
+

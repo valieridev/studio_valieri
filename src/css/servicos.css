@@ -1,0 +1,259 @@
+
+
+#section-servicos{
+    width: 100%;
+    background: radial-gradient(rgb(12, 12, 12) 0% 50%, rgb(9, 9, 9) 75% 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    padding: 40px 20px;
+}
+
+/* primeiro bloco*/
+
+h1,h2{
+    background-image: linear-gradient(135deg, #82700e 0%, #e6c36b 50%, #82700e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.containerIntroService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 18px;
+    margin-top: 5vh;
+}
+
+.containerIntroService h2{
+    font-size: clamp(35px,3vw,45px);
+    font-family: "Edu NSW ACT Cursive", cursive;
+    margin-bottom: -25px;
+}
+.containerIntroService h1{
+    font-size: clamp(30px,7vw,60px);
+    font-family: "Inria Serif", serif;
+    font-weight: 500;
+}
+.containerIntroService p{
+
+    width: 70%;
+    font-size: clamp(15px,3vw,17px);;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.55;
+    color: #a0a0a0;
+}
+.containerIntroService h3{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(135deg, #82700e 0%, #e6c36b 50%, #82700e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.containerIntroService hr{
+    width: 70px;
+    height: 1px;
+    border: none;                
+    margin: 14px auto 18px;      
+    background: linear-gradient(90deg, transparent, #daa520, transparent);
+}
+
+/* -- Tipos de serviços -- */
+
+
+.containerTiposServicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px; 
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px 0;
+}
+
+
+.itensServicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 0 1 calc((100% - 6*24px) / 7);
+    min-width: 100px;
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(60px); /* era 300px */
+    transition: opacity 0.6s ease-out, filter 0.6s ease-out, transform 0.6s ease-out;
+}
+.itensServicos.appear{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+}
+
+.imagemService{
+    padding: 22px 22px 20px 22px;
+    background: linear-gradient(145deg, #1c1a15, #0f0f0f);
+    border: 1px solid rgba(218, 165, 32, 0.22);
+    border-radius: 24px;
+    transition: 0.7s ease-in-out all;
+}
+.imagemService:hover{
+    border-color: #daa520;
+    box-shadow: 0 0 22px 2px rgba(218, 165, 32, 0.28);
+    transform: translateY(-6px);
+}
+.imagemService span{
+    font-size: 30px; 
+    color: #e6c36b;
+}
+.itensServicos h3{
+    font-size: clamp(10px,3vw,12px);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.55;
+    color: #bbbaba;
+    width: 90%;
+    min-height: calc(1.55em * 2);
+}
+
+/* Bloco inferior  */
+
+.containerFimService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 100px;
+    gap: 20px;
+}
+.containerFimService h2{
+    font-size: clamp(25px,3vw,35px);
+    font-family: "Inria Serif", serif;
+    font-weight: 500;
+}
+.containerFimService p{
+    width: 80%;
+    font-size: clamp(15px,3vw,17px);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.55;
+    color: #a0a0a0;
+}
+
+/* -- Section Galeria -- */
+
+#section-galeria{
+    width: 100%;
+    background: radial-gradient(rgb(12, 12, 12) 0% 50%, rgb(9, 9, 9) 75% 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.containerFotos{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    max-width:1400px;
+    margin:0 auto 10px;
+    justify-content: center;
+    gap: 20px 5px;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+/*fotos da galeria*/
+.fotos{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 300px;
+    padding-bottom: 20px;
+    overflow-y: hidden;
+    transition: 0.5s ease-in-out all;
+    opacity: 0.8;
+}
+.fotos:hover{
+    opacity: 1;
+}
+
+.fotos:nth-child(1){
+    background-image: url(../img/servicos/cilios.png);
+}
+
+.fotos:nth-child(2){
+    background-image: url(../img/servicos/sobrancelha.jpg);
+}
+.fotos:nth-child(3){
+    background-image: url(../img/servicos/microlabial.png);
+}
+.fotos:nth-child(4){
+    background-image: url(../img/servicos/makeeventos.png);
+}
+.fotos:nth-child(5){
+    background-image: url(../img/servicos/cilios.png);
+}
+.fotos:nth-child(6){
+    background-image: url(../img/servicos/sobrancelha.jpg);
+}
+.fotos:nth-child(7){
+    background-image: url(../img/servicos/microlabial.png);
+}
+.fotos:nth-child(8){
+    background-image: url(../img/servicos/makeeventos.png);
+}
+
+
+
+
+.fotos h3{
+    font-size: clamp(15px,3vw,25px);
+    text-align: center;
+    font-family: "Inria Serif", sans-serif;
+    line-height: 1.55;
+    color: #fffefe;
+
+}
+
+/* -- Fim da Galeria -- */
+
+.fimGaleria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 0px 30px 0px;
+    
+}
+.fimGaleria h3{
+    font-size: clamp(12px,3vw,15px);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.55;
+    color: #fffefe;
+    margin-bottom: 10px;
+}
+
+.fimGaleria #agendar-btn{
+    border: none;
+    border-radius: 15px;
+    font-size: clamp(18px,3vw,25px);
+    margin-top: 35px;
+}

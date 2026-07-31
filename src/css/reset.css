@@ -16,16 +16,10 @@ html, body {
     overflow-x: hidden; 
     position: relative;
 }
-html::-webkit-scrollbar, 
-body::-webkit-scrollbar {
-    display: none; 
-}
 
-/* Para Firefox e IE/Edge antigo */
-html, body {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;     
-}
+
+
+
 a{
     text-decoration: none;
 }

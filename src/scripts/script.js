@@ -45,7 +45,7 @@
 
 
 
-const elementsToAnimate = document.querySelectorAll('.animacao, .cards-depoimentos, .cards-servicos, .botoes');
+const elementsToAnimate = document.querySelectorAll('.animacao, .cards-depoimentos, .cards-servicos, .botoes, .itensServicos');
 
 const options = {
   root: null,
