@@ -249,9 +249,10 @@ header #agendar-btn .material-symbols-outlined {
 #section-2 p {
     max-width: 50vw;
     hyphens: auto; 
-    line-height: 25px;
-    font-size: clamp(14px,3vw,20px);
-    color: white;
+    line-height: 1.55;
+    font-size: clamp(14px,3vw,17px);
+    font-family: "Poppins", sans-serif;
+    color: #a0a0a0;
 }
 
 #agendar-btn { 
@@ -336,9 +337,10 @@ header #agendar-btn .material-symbols-outlined {
 #section-3 p {
     max-width: 50vw;
     hyphens: auto; 
-    line-height: 25px;
-    font-size: clamp(14px,3vw,20px);
-    color: white;
+    line-height: 1.55;
+    font-size: clamp(14px,3vw,17px);
+    font-family: "Poppins", sans-serif;
+    color: #a0a0a0;
     margin-left: 6%;
 }
 
@@ -539,11 +541,13 @@ hr{
     width: 80px;                
     margin: 20px auto;
 }
-#section-5 span{
-    color: rgb(98, 97, 97);
+#section-5 span:first-child{
+    
+    color: #a0a0a0;
 }
 #section-5 p{
-    color: rgb(98, 97, 97);
+    
+    color: #a0a0a0;
     font-size: clamp(12px, 7vw, 17px);
     
 }
@@ -583,7 +587,11 @@ hr{
     box-shadow: 5px 5px 20px rgba(255, 245, 245, 0.999);
 }
 
-
+#section-5 .botoes{
+    border-radius: 15px;
+    font-size: clamp(18px,3vw,25px);
+    margin-bottom: 35px;
+}
 /* --- Footer --- */
 
 footer {

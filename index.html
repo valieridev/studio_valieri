@@ -2,6 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preload" as="image" href="src/img/icone-wpp-botao-flutuante.png" fetchpriority="high">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pedro Valieri">
     <title>Studio Valieri | Extensão de Cílios, Sobrancelhas e Micropigmentação em Praia Grande</title>
@@ -18,6 +19,8 @@
     <link rel="stylesheet" href="./src/css/responsive.css">
     <link rel="stylesheet" href="./src/css/animations.css">
     <link rel="stylesheet" href="./src/css/reset.css">
+    <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+    <script src="./src/scripts/script.js" defer></script>
   </head>
   <body>
     <!--As sections estao em posicoes diferentes, a section 4 esta no lugar respectivo a section 2, a section 2 esta no lugar da section 3 e a section 3 no lugar da section 4, a 5 esta no mesmo lugar -->
@@ -236,26 +239,31 @@
         <div class="container-depoimentos">
           <div class="cards-depoimentos" >
             <div class="stars">★★★★★</div>
-            <p>"O atendimento da Glaucia é impecável. O Studio é super aconchegante e meus cílios duram muito mais do que em outros lugares que já fui. Não troco por nada!"<p>
-            <h4>Mariana Silva</h4>
+            <p>"Atendimento maravilhoso, ambiente confortável, trabalho impecável. Recomendo uma profissional excelente amei o resultado."<p>
+            <h4>Shayza de Carlos</h4>
             <span>CLIENTE DE CÍLIOS</span>
           </div>
 
           <div class="cards-depoimentos">
             <div class="stars">★★★★★</div>
-            <p>"Fiz micropigmentação e maquiagem para um casamento. Técnica perfeita, ficou super natural e harmônico com o meu rosto. Atendimento nota 1000!"</p>
-            <h4>Amanda R.</h4>
+            <p>"Sensacional, atendimento e profissionalismo de excelência. Ambiente aconchegante e o resultado do procedimento mega satisfatório super indico!"</p>
+            <h4>Adrielly Cazaroto.</h4>
             <span>CLIENTE DE MICROPIGMENTAÇÃO</span>
           </div>
 
           <div class="cards-depoimentos">
             <div class="stars">★★★★★</div>
-            <p>"Ambiente super reservado e confortável na Aviação. A gente se sente muito bem acolhida e sai de lá com a autoestima lá no alto. Maravilhosa!"</p>
-            <h4>Beatriz Souza</h4>
+            <p>"Extremamente maravilhoso, atendimento sem igual,amei o profissionalismo do Studio,está de parabéns"</p>
+            <h4>Maria Teresa</h4>
             <span>CLIENTE DE DESIGN DE SOBRANCELHAS</span>
           </div>
         </div>
 
+        <button id="agendar-btn" class="botoes">
+            <a href="https://search.google.com/local/writereview?placeid=ChIJgX8yBWsfzpQRRp3OH_SH3Dw"  target="_blank"
+              >Avaliar no Google</a
+            ><span class="material-symbols-outlined">arrow_forward</span>
+        </button>
       </section>
       
 
@@ -285,7 +293,6 @@
       </div>
     </footer>
 
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <script src="./src/scripts/script.js"></script>
+    
   </body>
 </html>
