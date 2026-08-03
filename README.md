@@ -32,10 +32,11 @@ studio_valieri/
 │   │   ├── animations.css     # Animações de entrada (scroll/observer)
 │   │   ├── responsive.css     # Media queries (breakpoints mobile/tablet)
 │   │   └── fonts-face.css     # Declarações @font-face das fontes self-hosted
-│   ├── fonts/                  # Arquivos .woff2 das fontes usadas no site
-│   ├── img/
-│   │   ├── servicos/           # Fotos de antes/depois e galeria de trabalhos
-│   │   └── ...                  # Logos, imagens de seção
+|   ├── assets/
+│   ├──   ├──fonts/                  # Arquivos .woff2 das fontes usadas no site
+│   ├──   ├──img/
+│   │         ├── servicos/           # Fotos de antes/depois e galeria de trabalhos
+│   │         └── ...                  # Logos, imagens de seção
 │   └── scripts/
 │       └── script.js            # Menu mobile, IntersectionObserver, interações
 └── README.md
