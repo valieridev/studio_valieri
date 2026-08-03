@@ -3,7 +3,9 @@
 }
 
 
-
+.botoes svg{
+    color: white
+}
 #section-1, #section-2, #section-3 {
     scroll-margin-top: 10vh; 
 }
@@ -195,7 +197,13 @@ header #agendar-btn .material-symbols-outlined {
     max-height: 55px;
     object-fit: contain;
 }
-
+.icon{
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
 
 
 /* --- Section 2 --- */

@@ -170,20 +170,20 @@ footer a:hover {
 
 .cards-depoimentos:nth-child(3) { transition-delay: 0.4s; }
 
-.botoes span{
+.botoes svg{
     animation-play-state: paused;
     transition: all 0.8s ease;
 }
-.botoes:hover span{
+.botoes:hover svg{
     animation: flutuacao 0.8s infinite alternate;
     animation-play-state: running; 
 }
-#como-chegar-btn span{
+#como-chegar-btn svg{
     animation-play-state: paused;
     transition: all 0.8s ease;
     transform: rotate(90deg);
 }
-#como-chegar-btn:hover span{
+#como-chegar-btn:hover svg{
     animation: lupa 0.8s infinite alternate;
     animation-play-state: running;
 }
@@ -219,6 +219,48 @@ footer a:hover {
 }
 #wpp-flutuante:hover{
     scale: 1.1;
+}
+
+
+/*pagina de servicos*/
+/*icones da sessao de serviços*/
+.imagemService:hover{
+    border-color: #daa520;
+    box-shadow: 0 0 22px 2px rgba(218, 165, 32, 0.28);
+    transform: translateY(-6px);
+}
+
+/*sessao da galeria de fotos*/
+
+.fotos:hover img{
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+
+/*transição de pagina*/
+
+@view-transition{
+    navigation: auto
+}
+::view-transition-group(root){
+    animation-duration: 1s;
+}
+::view-transition-old(root){
+    animation-name: saindo;
+}
+::view-transition-new(root){
+    animation-name: entrando;
+}
+@keyframes saindo{
+    to{
+        transform: translateY(-100%);
+    }
+}
+@keyframes entrando{
+    from{
+        transform: translateY(100%);
+    }
 }
 
 
