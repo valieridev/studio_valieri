@@ -21,6 +21,7 @@ h1,h2{
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .containerIntroService{
@@ -37,6 +38,7 @@ h1,h2{
     font-size: clamp(35px,3vw,45px);
     font-family: "Edu NSW ACT Cursive", cursive;
     margin-bottom: -25px;
+    font-weight: 400;
 }
 .containerIntroService h1{
     font-size: clamp(30px,7vw,60px);

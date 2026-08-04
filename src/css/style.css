@@ -125,7 +125,7 @@ header #agendar-btn .material-symbols-outlined {
 /* --- Section 1 --- */
 
 #section-1 {
-    background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/imagem-estudio.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.4)), url(../assets/img/imagem-estudio.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -157,6 +157,7 @@ header #agendar-btn .material-symbols-outlined {
 .content-titulos h2 {
     color: white;
     cursor: default;
+    
 }
 
 #subtitulo-glamour {
