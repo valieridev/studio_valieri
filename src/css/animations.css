@@ -44,8 +44,14 @@
 }
 
 /* --- Links do Menu (Header) --- */
+nav{
+    transition: all ease-in-out 0.7s;
+}
 nav a::after {
     transition: width ease-in-out 0.7s;
+}
+nav a:hover{
+    border-bottom: 1px solid #daa520;
 }
 
 nav a:hover::after {
@@ -104,6 +110,9 @@ nav a:hover::after {
 }
 #todos-os-servicos div:hover{
     box-shadow: 0 0 25px 5px rgba(218, 165, 32, 0.5);
+}
+.cards-servicos h2{
+    white-space: nowrap;
 }
 /* --- Botão Agendar (Section 2) --- */
 #agendar-btn {
