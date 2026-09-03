@@ -28,7 +28,7 @@
     }
 
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 346px) and (max-width: 768px) {
     header #agendar-btn{
         display: none;
     }
